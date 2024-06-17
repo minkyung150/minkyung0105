@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd; /* 카드 테두리 추가 */
+            border-radius: 5px; /* 카드 모서리 둥글게 */
+            padding: 20px; /* 카드 내부 여백 */
+            background-color: white; /* 카드 배경색 */
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .hero, .card-body {
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .col {
+            flex: 0 0 auto;
+            width: 45%; /* 두 카드의 너비 조정 */
+            margin: 0 2.5%; /* 카드 간의 간격 조정 */
+        }
+        .container {
+            background-color: #1f7680;
+            color: white;
+            padding: 20px; /* 컨테이너 내부 여백 */
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* 버튼 배경색 */
+            color: white; /* 버튼 글자색 */
+            text-decoration: none; /* 버튼 밑줄 제거 */
+            border-radius: 5px; /* 버튼 모서리 둥글게 */
+        }
+        .btn:hover {
+            background-color: #45a049; /* 버튼 호버 색상 */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero d-flex justify-content-center align-items-center" style="background-color: #ffffff; color: rgb(0, 0, 0); font-family: 'Rix Passion', sans-serif;">
+        <div class="container text-center">
+            <h1>취향저격 자기주도학습 도우미</h1>
+            <p>AI 기술을 기반으로 학생 맞춤 학습자료를 제공합니다.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(0, 0, 0);">문제를 풀고 레벨을 확인하세요!</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" style="color: rgb(0, 0, 0);">지식 추적 알고리즘</h6>
+                        <p class="card-text"></p>
+                        <a href="subject_selection.html" class="btn">나의 학습레벨 체크하기</a> <!-- 수학 문제 푸는 장면으로 연결 -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(0, 0, 0);">나만의 학습취향을 설명해보세요!</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" style="color: rgb(0, 0, 0);">협업 필터링</h6>
+                        <p class="card-text"></p>
+                        <a href="sentence_input.html" class="btn">나의 학습취향 확인하기</a> <!-- 문장 입력 장면으로 연결 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
